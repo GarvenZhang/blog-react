@@ -1,0 +1,7 @@
+.body {
+  display: flex;
+}
+.main {
+  flex: 1;
+  padding: 20px 60px;
+}

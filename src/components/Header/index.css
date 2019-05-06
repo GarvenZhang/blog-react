@@ -1,0 +1,15 @@
+.header-area {
+  display: flex;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  background-color: forestgreen;
+}
+
+.status-area {
+  line-height: 30px;
+}
+.username {
+  color: yellowgreen;
+  margin-right: 20px;
+}

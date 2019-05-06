@@ -1,0 +1,29 @@
+.article-item {
+  background-color: paleturquoise;
+  padding: 2px 5px;
+  margin-bottom: 20px;
+}
+.item-head {
+  display: flex;
+}
+.item-head .link-article,
+.item-head .item-text,
+.item-head .item-time {
+  flex: 1;
+  font-size: 12px;
+  line-height: 36px;
+}
+.item-head .item-title {
+  font-size: 18px;
+  font-weight: 800;
+}
+.item-body {
+  display: flex;
+}
+.item-body .item-desc {
+  flex: 2;
+  font-size: 12px;
+}
+.item-body .item-cover {
+  flex:1 ;
+}

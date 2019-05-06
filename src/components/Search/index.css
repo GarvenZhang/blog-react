@@ -1,0 +1,11 @@
+.search-wrap {
+  flex: 1;
+  display: flex;
+}
+.icon-search {
+  margin-right: 3px;
+}
+.search-inp {
+  flex: 1;
+  line-height: 30px;
+}

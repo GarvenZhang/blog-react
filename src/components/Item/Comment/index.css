@@ -1,0 +1,9 @@
+.comment-item {
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  background-color: chocolate;
+}
+.comment-item .content {
+  font-size: 12px;
+  line-height: 1.2;
+}

@@ -3,7 +3,12 @@ import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
-import './index.css'
+import Header from '../../../components/Header/index'
+import Search from '../../../components/Search/index'
+import Menu from '../../../components/Menu/index'
+import ArticleItem from '../../../components/Item/Article/index'
+
+import style from './index.css'
 
 export default class Home extends Component {
   constructor(props) {
@@ -20,6 +25,25 @@ export default class Home extends Component {
   }
 
   render() {
-    return <h1>App</h1>
+    return (
+      <div className={style['home-page']}>
+        <Header>
+          <Search/>
+          <Menu/>
+        </Header>
+        <div className={style['main']}>
+          <ul className={style['article-list']}>
+            <ArticleItem/>
+            <ArticleItem/>
+            <ArticleItem/>
+            <ArticleItem/>
+            <ArticleItem/>
+            <ArticleItem/>
+            <ArticleItem/>
+            <ArticleItem/>
+          </ul>
+        </div>
+      </div>
+    )
   }
 }

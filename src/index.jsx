@@ -6,6 +6,9 @@ import { AppContainer } from 'react-hot-loader'
 import { IndexRouteMap } from './routers/index'
 import store from './redux/store'
 
+import './assets/styles/reset'
+import './assets/fonts/iconfont.css'
+
 ReactDOM.render(
   <AppContainer>
     <Provider store={store}>

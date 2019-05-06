@@ -1,0 +1,25 @@
+.table {
+  width: 100%;
+  background-color: indianred;
+}
+.table thead tr {
+  background-color: aquamarine;
+}
+.table thead td {
+  font-size: 22px;
+  font-weight: 900;
+}
+.table td {
+  font-size: 14px;
+  text-align: center;
+}
+.table tbody tr {
+  border-bottom: 1px solid rosybrown;
+}
+.table .btn {
+  margin-right: 15px;
+}
+.table tfoot td {
+  font-size: 18px;
+  text-align: center;
+}

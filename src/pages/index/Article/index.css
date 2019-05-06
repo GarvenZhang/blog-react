@@ -1,0 +1,28 @@
+.article,
+.comment-area {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.article h1 {
+  font-weight: 900;
+  text-align: center;
+  border-bottom: 4px double blueviolet;
+  margin-bottom: 5px;
+}
+.article aside {
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 4px double blueviolet;
+  margin-bottom: 5px;
+}
+.article aside span {
+  margin-right: 5px;
+}
+.article section {
+  border-bottom: 4px double blueviolet;
+}
+.comment-area .title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+

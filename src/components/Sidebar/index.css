@@ -1,0 +1,20 @@
+.sidebar-area {
+  width: 150px;
+  height: calc(100vh - 70px);
+  padding: 20px 10px;
+  margin-left: 10px;
+  background-color: hotpink;
+}
+.title {
+  font-size: 24px;
+}
+.link-wrap {
+
+}
+.nav-item {
+  margin-bottom: 20px;
+}
+.nav-item a {
+  margin-left: 20px;
+  font-size: 16px;
+}

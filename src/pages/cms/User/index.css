@@ -1,0 +1,66 @@
+.table {
+  width: 100%;
+  background-color: indianred;
+}
+.table thead tr {
+  background-color: aquamarine;
+}
+.table thead td {
+  font-size: 22px;
+  font-weight: 900;
+}
+.table td {
+  font-size: 14px;
+  text-indent: 10px;
+}
+.table tbody tr {
+  border-bottom: 1px solid rosybrown;
+}
+.table .btn {
+  margin-right: 15px;
+}
+
+.form {
+  padding: 10px 20px;
+  background-color: wheat;
+}
+.form-item:not(:last-child) {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+.form-item .name {
+  width: 100px;
+  text-align: center;
+  border: 1px dotted cadetblue;
+  background-color: #ccc;
+}
+.form-item input:not([type='radio']),
+.form-item select,
+.form-item textarea,
+.form-item .radio-wrap {
+  width: 100%;
+  text-indent: 5px;
+}
+.form-item input[type='radio'] {
+  margin: -2px 5px 0;
+}
+.form-item label {
+  display: inline-block;
+}
+.textarea-desc {
+  max-height: 4em;
+}
+.form-item:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-item:last-child .btn {
+  width: 100px;
+  font-size: 18px;
+  margin-right: 30px;
+  background-color: aqua;
+}
+.tips {
+  flex: 1;
+}

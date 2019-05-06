@@ -1,0 +1,34 @@
+.menu-wrap {
+  text-align: center;
+}
+.btn-panel {
+  display: block;
+  height: 100%;
+}
+:local(.btn-panel):global(.iconfont) {
+  font-size: 22px;
+}
+.menu-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: aqua;
+}
+.menu-list {
+  padding: 30px 80px;
+}
+.menu-item {
+  border-bottom: 2px double royalblue;
+  margin-bottom: 50px;
+}
+.link {
+  font-size: 18px;
+}
+.btn-back {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

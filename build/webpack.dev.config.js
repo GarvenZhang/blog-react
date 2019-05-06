@@ -7,6 +7,10 @@ const distPath = path.resolve('./dist')
 const indexPath = path.resolve('./src/index.jsx')
 const htmlPath = path.resolve('./src/index.tmpl.html')
 const cssName = 'main.css'
+const cssGlobalPath = [
+  path.resolve('./src/assets/fonts/iconfont.css'),
+  path.resolve('./src/assets/styles/reset.css')
+]
 
 module.exports = {
   mode: 'development',
@@ -40,6 +44,7 @@ module.exports = {
             ],
             plugins: [
               '@babel/plugin-transform-runtime',
+              ['@babel/plugin-proposal-decorators', {legacy: true }],
               'transform-function-bind',
               'transform-class-properties'
             ]
@@ -48,6 +53,24 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        exclude: cssGlobalPath,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                localIdentName: '[local]_[hash:base64:5]',
+                importLoaders: 1
+              }
+            }
+          ]
+        })
+      },
+      {
+        test: /\.css$/,
+        include: cssGlobalPath,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: 'css-loader'

@@ -1,0 +1,39 @@
+.main-inner {
+  display: flex;
+  height: 100%;
+}
+.sidebar-area {
+  width: 150px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: aqua
+}
+.article-item {
+  border-bottom: 1px #000000 dotted;
+  margin-bottom: 20px;
+  cursor: default;
+}
+.comment-area {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: aquamarine;
+}
+.comment-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.item-hd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.item-hd .btn {
+  color: cadetblue;
+  margin-right: 20px;
+}
+.item-bd {
+  min-height: 4em;
+  background-color: #e4a3e4;
+}
